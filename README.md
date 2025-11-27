@@ -1,6 +1,6 @@
 # Random Users App 📱
 
-És una aplicació React que mostra usuaris aleatoris de l'API [Random User Generator](https://randomuser.me/), amb funcionalitats de cerca, filtrat i gestió de favorits.
+És una aplicació React que mostra usuaris aleatoris de l'API [Random User Generator]<a href="https://random-users-akustikoa.netlify.app/" target="_blank" rel="noopener noreferrer">, amb funcionalitats de cerca, filtrat i gestió de favorits.
 
 ## ✨ Funcionalitats
 

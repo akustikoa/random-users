@@ -263,7 +263,7 @@ footer i {
 }
 
 /* //////////////////////// RESPONSIVE /////////////////////////*/
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 910px) {
   header {
     flex-direction: column;
     gap: 8px;
@@ -343,5 +343,15 @@ footer i {
   .favorite-person-item p {
     color: rgb(99, 99, 99);
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  header .header-button p {
+    display: none;
+  }
+
+  .person-info p {
+    font-size: 12px;
   }
 }

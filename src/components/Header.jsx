@@ -11,13 +11,13 @@ const Header = ({
 
       <div className='header-buttons-container'>
         <button className={`header-button`} onClick={() => refreshTrigger()}>
-          <i className='fa-solid fa-arrows-rotate'></i> Refresh
+          <i className='fa-solid fa-arrows-rotate'></i> <p>Refresh</p>
         </button>
         <button
           className={`header-button ${isOpen === true ? 'is-active' : ''}`}
           onClick={() => toggleModal()}
         >
-          <i className='fa-solid fa-heart'></i> Favorites
+          <i className='fa-solid fa-heart'></i> <p>Favorites</p>
         </button>
         <button
           className={`header-button ${
@@ -25,7 +25,7 @@ const Header = ({
           } `}
           onClick={() => toggleGender('male')}
         >
-          <i className='fa-solid fa-mars'></i> Male
+          <i className='fa-solid fa-mars'></i> <p>Male</p>
         </button>
         <button
           className={`header-button ${
@@ -33,7 +33,7 @@ const Header = ({
           } `}
           onClick={() => toggleGender('female')}
         >
-          <i className='fa-solid fa-venus'></i> Female
+          <i className='fa-solid fa-venus'></i> <p>Female</p>
         </button>
       </div>
     </header>

@@ -23,13 +23,13 @@ const Person = ({
           {name} {last}
         </h2>
         <p>
-          <i class='fa-solid fa-user'></i> @{nickName}
+          <i className='fa-solid fa-user'></i> @{nickName}
         </p>
         <p>
-          <i class='fa-solid fa-envelope'></i> {email}
+          <i className='fa-solid fa-envelope'></i> {email}
         </p>
         <p>
-          <i class='fa-solid fa-mobile-screen-button'></i> {cell}
+          <i className='fa-solid fa-mobile-screen-button'></i> {cell}
         </p>
         <p>
           {gender === 'male' ? (
