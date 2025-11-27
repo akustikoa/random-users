@@ -45,7 +45,11 @@ function App() {
   };
 
   const toggleGender = (gender) => {
-    setActiveGender((current) => (current === gender ? null : gender));
+    if (activeGender === gender) {
+      setActiveGender(null);
+    } else {
+      setActiveGender(gender);
+    }
   };
 
   const toggleModal = () => {

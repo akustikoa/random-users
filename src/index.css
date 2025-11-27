@@ -85,13 +85,15 @@ footer i {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.header-button:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+@media (hover: hover) and (pointer: fine) {
+  .header-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
 }
 
 .header-button:active {
-  transform: scale(0.97);
+  opacity: 0.85;
 }
 .header-button i {
   font-size: 20px;
