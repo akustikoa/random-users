@@ -1,7 +1,14 @@
 function Footer() {
   return (
     <footer>
-      <i className='fa-regular fa-copyright'> </i> Xavier Prat
+      <a
+        href='https://www.linkedin.com/in/xavierprat/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <i className='fab fa-linkedin'> </i>
+        Xavier Prat
+      </a>
     </footer>
   );
 }

@@ -16,42 +16,36 @@ const FavoritesModal = ({ people, onClose, isOpen, removeFavorite }) => {
             <i className='fa-solid fa-xmark'></i>
           </button>
         </header>
-        
-        {/* MOSTRAR LOADING SI PEOPLE ESTÀ BUID */}
-        {people.length === 0 ? (
+        {people.length === 0 && (
           <div className='favorite-person-item no-favorites'>
-            <h2>Loading favorites...</h2>
+            <h2>No favorites added...</h2>
           </div>
-        ) : (
-          <>
-            {/* MOSTRAR LLISTA QUAN HI HA DADES */}
-            {people.map((person) => (
-              <div key={person.email} className='favorite-person-item'>
-                <div className='favorite-left'>
-                  <img
-                    className='favorite-person-picture'
-                    src={person.picture.medium}
-                    alt={`${person.name.first} ${person.name.last}`}
-                  />
-                </div>
-                <div className='favorite-right'>
-                  <h2 className='favorite-person-name'>
-                    {person.name.first} {person.name.last}
-                  </h2>
-                  <p className='favorite-person-email'>{person.email}</p>
-                  <p className='favorite-person-phone'>{person.cell}</p>
-
-                  <button
-                    className='favorite-person-close'
-                    onClick={() => removeFavorite(person.email)}
-                  >
-                    <i className='fa-solid fa-xmark'></i>
-                  </button>
-                </div>
-              </div>
-            ))}
-          </>
         )}
+        {people.map((person) => (
+          <div key={person.email} className='favorite-person-item'>
+            <div className='favorite-left'>
+              <img
+                className='favorite-person-picture'
+                src={person.picture.medium}
+                alt={`${person.name.first} ${person.name.last}`}
+              />
+            </div>
+            <div className='favorite-right'>
+              <h2 className='favorite-person-name'>
+                {person.name.first} {person.name.last}
+              </h2>
+              <p className='favorite-person-email'>{person.email}</p>
+              <p className='favorite-person-phone'>{person.cell}</p>
+
+              <button
+                className='favorite-person-close'
+                onClick={() => removeFavorite(person.email)}
+              >
+                <i className='fa-solid fa-xmark'></i>
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

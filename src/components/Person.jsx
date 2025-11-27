@@ -6,27 +6,38 @@ const Person = ({
   nickName,
   cell,
   gender,
-  filteredFavorites,
+  addToFavorites,
   isFavorite,
+  person,
 }) => {
   const genderCapitalized = gender.charAt(0).toUpperCase() + gender.slice(1);
-  
+
   return (
     <div
       className={`person-container ${isFavorite ? 'person-favorite' : ''} `}
-      onClick={() => filteredFavorites(email)}
+      onClick={() => addToFavorites(person)}
     >
       <img className='person-picture' src={picture} alt={name} />
-
       <div className='person-info'>
         <h2>
           {name} {last}
         </h2>
-        <p className=''> @{nickName}</p>
-        <p>{email}</p>
-        <p>{cell}</p>
         <p>
-          {gender === 'male' ? '♂️' : '♀️'} {genderCapitalized}
+          <i class='fa-solid fa-user'></i> @{nickName}
+        </p>
+        <p>
+          <i class='fa-solid fa-envelope'></i> {email}
+        </p>
+        <p>
+          <i class='fa-solid fa-mobile-screen-button'></i> {cell}
+        </p>
+        <p>
+          {gender === 'male' ? (
+            <i className='fa-solid fa-mars'></i>
+          ) : (
+            <i className='fa-solid fa-venus'></i>
+          )}{' '}
+          {genderCapitalized}
         </p>
       </div>
     </div>

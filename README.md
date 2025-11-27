@@ -1,16 +1,92 @@
-# React + Vite
+# Random Users App 📱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+És una aplicació React que mostra usuaris aleatoris de l'API [Random User Generator](https://randomuser.me/), amb funcionalitats de cerca, filtrat i gestió de favorits.
 
-Currently, two official plugins are available:
+## ✨ Funcionalitats
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **👥 Llista d'usuaris**: Mostra 50 usuaris aleatoris amb foto, nom, email i telèfon
+- **⚡ Filtres per gènere**: Filtra usuaris per home, dona o tots
+- **❤️ Gestió de favorits**: Afegeix/elimina usuaris dels teus favorits
+- **💾 Persistència**: Els favorits es guarden al localStorage
+- **🔄 Refresh**: Actualitza la llista d'usuaris
+- **📱 Disseny responsive**: Adaptat per a mòbils i escriptori
 
-## React Compiler
+## 🛠️ Tecnologies Utilitzades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** - Framework principal
+- **CSS3** - Estils i disseny responsive
+- **Font Awesome** - Icones
+- **Random User API** - Dades d'usuaris
+- **LocalStorage** - Persistència de dades
 
-## Expanding the ESLint configuration
+## 🚀 Instal·lació i Execució
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisits
+
+- Node.js (versió 14 o superior)
+- npm o yarn
+
+### Passos d'instal·lació
+
+1. **Clona el repositori**:
+   \`\`\`bash
+   git clone [url-del-repositori]
+   cd random-users-app
+   \`\`\`
+
+2. **Instal·la les dependències**:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Executa l'aplicació**:
+   \`\`\`bash
+   npm start
+   \`\`\`
+
+4. **Obre el navegador**:
+   \`\`\`
+   http://localhost:3000
+   \`\`\`
+
+## 🎯 Com Utilitzar l'App
+
+1. **Veure usuaris**: Al carregar l'app es mostren 50 usuaris aleatoris
+2. **Filtrar per gènere**: Fes clic als botons "Male" o "Female"
+3. **Afegir favorits**: Fes clic sobre qualsevol usuari per afegir-lo/treure'l dels favorits
+4. **Veure favorits**: Fes clic al botó "Favorites" per obrir el modal
+5. **Actualitzar llista**: Fes clic a "Refresh" per obtenir nous usuaris
+
+## 📁 Estructura del Projecte
+
+\`\`\`
+src/
+├── components/
+│ ├── Header.jsx # Barra de navegació amb filtres
+│ ├── People.jsx # Llista d'usuaris
+│ ├── Person.jsx # Component individual d'usuari
+│ ├── FavoritesModal.jsx # Modal de favorits
+│ └── Footer.jsx # Peu de pàgina
+├── App.jsx # Component principal
+└── index.js # Punt d'entrada
+\`\`\`
+
+## 🎨 Característiques de Disseny
+
+- **Colors**: Paleta de colors moderna amb variables CSS
+- **Animacions**: Transicions suaus en les interaccions
+- **Icones**: Font Awesome per a una experiència visual rica
+- **Responsive**: Disseny adaptable a diferents mides de pantalla
+
+## 🌐 API Utilizada
+
+- **URL**: \`https://randomuser.me/api/\`
+- **Paràmetres**: \`seed\` (per consistència) i \`results=50\`
+- **Format**: JSON amb informació d'usuaris reals
+
+## 👨‍💻 Autor
+
+**Xavier Prat**
+
+- LinkedIn: [Xavier Prat](https://www.linkedin.com/in/xavierprat/)
+- GitHub: [@akustikoa](https://github.com/akustikoa)
