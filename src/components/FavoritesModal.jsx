@@ -34,8 +34,14 @@ const FavoritesModal = ({ people, onClose, isOpen, removeFavorite }) => {
               <h2 className='favorite-person-name'>
                 {person.name.first} {person.name.last}
               </h2>
-              <p className='favorite-person-email'>{person.email}</p>
-              <p className='favorite-person-phone'>{person.cell}</p>
+              <p className='favorite-person-email'>
+                {' '}
+                <i className='fa-solid fa-envelope'></i> {person.email}
+              </p>
+              <p className='favorite-person-phone'>
+                <i className='fa-solid fa-mobile-screen-button'></i>{' '}
+                {person.cell}
+              </p>
 
               <button
                 className='favorite-person-close'

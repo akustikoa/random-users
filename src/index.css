@@ -231,7 +231,12 @@ footer i {
   color: rgb(95, 95, 95);
 }
 .favorite-right p {
-  color: rgb(99, 99, 99);
+  margin-left: 2px;
+  color: rgb(128, 128, 128);
+}
+
+.favorite-right i {
+  margin-right: 6px;
 }
 
 .favorite-person-email {
@@ -318,11 +323,11 @@ footer i {
   .person-favorite {
     background-color: var(--primary-color);
     h2 {
-      color: var(--primary-color);
+      color: var(--secondary-color);
     }
 
     p {
-      color: rgb(221, 206, 206);
+      color: rgb(228, 217, 217);
     }
   }
 
