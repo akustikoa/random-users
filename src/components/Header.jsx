@@ -7,7 +7,7 @@ const Header = ({
 }) => {
   return (
     <header>
-      <h1>R  andom users</h1>
+      <h1>Random users</h1>
 
       <div className='header-buttons-container'>
         <button className={`header-button`} onClick={() => refreshTrigger()}>
