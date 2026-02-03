@@ -1,92 +1,84 @@
-# Random Users App 📱
+# 📱 Random Users App
 
-És una aplicació React que mostra usuaris aleatoris de l'API [Random User Generator]<a href="https://random-users-akustikoa.netlify.app/" target="_blank" rel="noopener noreferrer">, amb funcionalitats de cerca, filtrat i gestió de favorits.
+A React application that displays random users from the Random User Generator API, featuring
+search, filtering, and favorites management functionalities.
 
-## ✨ Funcionalitats
+---
 
-- **👥 Llista d'usuaris**: Mostra 50 usuaris aleatoris amb foto, nom, email i telèfon
-- **⚡ Filtres per gènere**: Filtra usuaris per home, dona o tots
-- **❤️ Gestió de favorits**: Afegeix/elimina usuaris dels teus favorits
-- **💾 Persistència**: Els favorits es guarden al localStorage
-- **🔄 Refresh**: Actualitza la llista d'usuaris
-- **📱 Disseny responsive**: Adaptat per a mòbils i escriptori
+## ✨ Main Features
 
-## 🛠️ Tecnologies Utilitzades
+- 👥 User list: Displays 50 random users with photo, name, email, and phone
+- ⚡ Gender filters: Filter users by male, female, or all
+- ❤️ Favorites management: Add/remove users from your favorites
+- 💾 Persistence: Favorites saved to localStorage
+- 🔄 Refresh: Update the user list instantly
+- 📱 Responsive design: Works on mobile and desktop
 
-- **React 18** - Framework principal
-- **CSS3** - Estils i disseny responsive
-- **Font Awesome** - Icones
-- **Random User API** - Dades d'usuaris
-- **LocalStorage** - Persistència de dades
+---
 
-## 🚀 Instal·lació i Execució
+## 🛠️ Technologies Used
 
-### Prerequisits
+- React 18
+- CSS3
+- Font Awesome
+- Random User API
+- localStorage
 
-- Node.js (versió 14 o superior)
-- npm o yarn
+---
 
-### Passos d'instal·lació
+## ⚙️ Installation & Execution
 
-1. **Clona el repositori**:
-   \`\`\`bash
-   git clone [url-del-repositori]
-   cd random-users-app
-   \`\`\`
+### Prerequisites
 
-2. **Instal·la les dependències**:
-   \`\`\`bash
-   npm install
-   \`\`\`
+- Node.js (v14 or higher)
+- npm or yarn
 
-3. **Executa l'aplicació**:
-   \`\`\`bash
-   npm start
-   \`\`\`
+### 1. Clone the repository
 
-4. **Obre el navegador**:
-   \`\`\`
-   http://localhost:3000
-   \`\`\`
+```bash
+git clone [your-repository-url]
+cd random-users-app
+```
 
-## 🎯 Com Utilitzar l'App
+### 2. Install dependencies
 
-1. **Veure usuaris**: Al carregar l'app es mostren 50 usuaris aleatoris
-2. **Filtrar per gènere**: Fes clic als botons "Male" o "Female"
-3. **Afegir favorits**: Fes clic sobre qualsevol usuari per afegir-lo/treure'l dels favorits
-4. **Veure favorits**: Fes clic al botó "Favorites" per obrir el modal
-5. **Actualitzar llista**: Fes clic a "Refresh" per obtenir nous usuaris
+```bash
+npm install
+```
 
-## 📁 Estructura del Projecte
+### 3. Run the application
 
-\`\`\`
-src/
-├── components/
-│ ├── Header.jsx # Barra de navegació amb filtres
-│ ├── People.jsx # Llista d'usuaris
-│ ├── Person.jsx # Component individual d'usuari
-│ ├── FavoritesModal.jsx # Modal de favorits
-│ └── Footer.jsx # Peu de pàgina
-├── App.jsx # Component principal
-└── index.js # Punt d'entrada
-\`\`\`
+```bash
+npm start
+```
 
-## 🎨 Característiques de Disseny
+### 4. Open in browser
 
-- **Colors**: Paleta de colors moderna amb variables CSS
-- **Animacions**: Transicions suaus en les interaccions
-- **Icones**: Font Awesome per a una experiència visual rica
-- **Responsive**: Disseny adaptable a diferents mides de pantalla
+```bash
+http://localhost:3000
+```
 
-## 🌐 API Utilizada
+---
 
-- **URL**: \`https://randomuser.me/api/\`
-- **Paràmetres**: \`seed\` (per consistència) i \`results=50\`
-- **Format**: JSON amb informació d'usuaris reals
+## 🎯 How to Use the App
 
-## 👨‍💻 Autor
+- View users: On load, 50 random users are displayed
+- Filter by gender: Click **Male** or **Female**
+- Add favorites: Click any user card to toggle favorite
+- View favorites: Open the favorites modal
+- Update list: Click **Refresh** to fetch
 
-**Xavier Prat**
+---
 
-- LinkedIn: [Xavier Prat](https://www.linkedin.com/in/xavierprat/)
-- GitHub: [@akustikoa](https://github.com/akustikoa)
+## 🌐 API Used
+
+- URL: https://randomuser.me/api/
+- Parameters: seed (consistency) and results=50
+- Format: JSON with real user information
+
+---
+
+## ✨ Author
+
+**Xavier Prat** — Frontend Developer  
+🔗 https://linkedin.com/in/xavierprat
